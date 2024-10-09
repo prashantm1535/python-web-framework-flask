@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Solar System</title>
+  </head>
+
+  <body>
+    <!-- Here passing List -->
+    <h1>Planets in our Solar System :</h1>
+    <ul>
+      {% for planet in planets %}
+      <li>{{planet}}</li>
+      {% endfor %}
+    </ul>
+
+    <hr />
+
+    <!-- Here passing dictionary -->
+    <h1>Indian Cricketers with their home towns :</h1>
+    <ul>
+      {% for key, value in players.items() %}
+      <li>{{key}} : {{value}}</li>
+      {% endfor %}
+    </ul>
+  </body>
+</html>

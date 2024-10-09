@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Intro Jinja2</title>
+  </head>
+  <body>
+    <h1>Jinja2 Introduction</h1>
+    <h2>Hello, {{name}}</h2>
+    <p>This is your Introduction to the {{template_name}} template language.</p>
+
+    <h3>To test jinja2 :</h3>
+
+    <code>
+      <!-- <pre> -->
+      code : 
+      from jinja2 import Template 
+      template = Template("Hello, {{name}}")
+      template.render(name="John Deo")
+       
+      output : Hello, John Deo
+      <!-- </pre> -->
+    </code>
+  </body>
+</html>

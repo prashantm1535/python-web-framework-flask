@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jinja2 Expressions</title>
+  </head>
+  <body>
+    <h2>Expressions in Jinja2</h2>
+    <hr />
+
+    <h3>Interpolation</h3>
+
+    <p>
+      A quick <b>{{ color }} {{ animal_one }}</b> jumps over the lazy
+      <b>{{ animal_two }}</b>.
+    </p>
+    <hr />
+
+    <h3>Addition and Subtraction</h3>
+
+    <p>
+      Alice bought <b>{{ orange_amount }}</b> oranges and
+      <b>{{ apple_amount }}</b> apples.
+    </p>
+
+    <p>In total she has <b>{{ orange_amount + apple_amount }}</b> fruits.</p>
+
+    <p>She gave <b>{{ donate_amount }}</b> fruits to Bob.</p>
+
+    <p>
+      Now she has
+      <b>{{ orange_amount + apple_amount - donate_amount }}</b> fruits
+      remaining.
+    </p>
+    <hr />
+
+    <h3>String Concatenation</h3>
+
+    <p>
+      A lot of people think <b>{{ first_name + ' ' + last_name }}</b> is the
+      most powerful Marvel character.
+    </p>
+  </body>
+</html>
